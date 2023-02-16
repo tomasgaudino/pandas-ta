@@ -700,7 +700,7 @@ class AnalysisIndicators(BasePandasObject):
 
         timed = kwargs.pop("timed", False)
         results = []
-        use_multiprocessing = True if self.cores > 0 else False
+        use_multiprocessing = False
         has_col_names = False
 
         if timed:
